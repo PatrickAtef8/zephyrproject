@@ -205,8 +205,7 @@ west --version  # Should show 0.14.0 or higher
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/PatrickAtef8/zephyr-mqtt-cpp-publisher.git
-cd zephyr-mqtt-cpp-publisher
+git clone git@github.com:PatrickAtef8/zephyrproject.git
 ```
 
 ### Step 2: Make Scripts Executable
