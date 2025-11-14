@@ -652,20 +652,7 @@ pkill qemu-system-x86
 
 ---
 
-## Acknowledgments
-
-- **Zephyr Project** for the excellent RTOS and documentation
-- **Eclipse Mosquitto** for the reliable and lightweight broker
-- **QEMU** for making hardware-free development possible
-- **Community contributors** for feedback and improvements
-
----
-
 <div align="center">
-
-**Star this repo if you find it helpful!**
-
-Made with care for the embedded systems community
 
 [Back to Top](#zephyr-mqtt-c-publisher)
 
