@@ -11,8 +11,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/PatrickAtef8/zephyr-mqtt-cpp-publisher.git
-cd zephyr-mqtt-cpp-publisher
+git clone https://github.com/PatrickAtef8/zephyrproject.git
+cd zephyrproject/zephyr-mqtt-cpp-publisher
 
 # Setup Zephyr workspace (first time only)
 ./scripts/1-setup-workspace.sh
