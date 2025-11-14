@@ -637,17 +637,13 @@ pkill qemu-system-x86
 ### Tutorials & Guides
 - [Getting Started with Zephyr](https://docs.zephyrproject.org/latest/getting_started/)
 - [MQTT Essentials](https://www.hivemq.com/mqtt-essentials/) - Comprehensive MQTT guide
-- [Modern C++ for Embedded](https://embedded-artistry.com/blog/2018/04/26/embedded-c/) - Best practices
+- [Modern C++ for Embedded Systems (Field Manual – Embedded Artistry)](https://embeddedartistry.com/fieldmanual-terms/cpp/)  
+  Covers best practices for using C++ in embedded systems.
 
 ### Community
-- [Zephyr Discord](https://discord.gg/zephyr) - Real-time chat
 - [Zephyr GitHub](https://github.com/zephyrproject-rtos/zephyr) - Source code & issues
-- [MQTT Community](https://mqtt.org/community/) - Protocol discussions
-
-### Related Projects
-- [Eclipse Mosquitto](https://mosquitto.org/) - Popular MQTT broker
-- [HiveMQ](https://www.hivemq.com/) - Enterprise MQTT platform
-- [Node-RED](https://nodered.org/) - Flow-based IoT programming
+- [MQTT: The Standard for IoT Messaging](https://mqtt.org/)  
+  Official site for the MQTT protocol, including community discussions and resources.
 
 ---
 
