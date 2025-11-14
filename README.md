@@ -107,7 +107,7 @@ This project demonstrates a **production-ready MQTT publisher** for IoT applicat
 ```
                               HOST SYSTEM
     ┌───────────────────────────────────────────────────────┐
-    │                                                         │
+    │                                                       │
     │   ┌─────────────────┐          ┌──────────────────┐   │
     │   │  MQTT Broker    │          │ MQTT Subscriber  │   │
     │   │  (Mosquitto)    │          │ (mosquitto_sub)  │   │
@@ -125,37 +125,37 @@ This project demonstrates a **production-ready MQTT publisher** for IoT applicat
     │                         │                             │
     │         ┌───────────────▼────────────────┐            │
     │         │     QEMU x86 Emulation         │            │
-    │         │                                 │            │
+    │         │                                │            │
     │         │  ┌──────────────────────────┐  │            │
     │         │  │   Zephyr RTOS            │  │            │
     │         │  │   IP: 192.0.2.1          │  │            │
     │         │  │                          │  │            │
-    │         │  │  ┌───────────────────┐  │  │            │
-    │         │  │  │ Application Layer │  │  │            │
-    │         │  │  │                   │  │  │            │
-    │         │  │  │  MqttPublisher    │  │  │            │
-    │         │  │  │  (C++ Class)      │  │  │            │
-    │         │  │  │                   │  │  │            │
-    │         │  │  │  ┌──────────┐    │  │  │            │
-    │         │  │  │  │  Sensor  │    │  │  │            │
-    │         │  │  │  │ Simulator│    │  │  │            │
-    │         │  │  │  └─────┬────┘    │  │  │            │
-    │         │  │  │        │         │  │  │            │
-    │         │  │  │        ▼         │  │  │            │
-    │         │  │  │  ┌──────────┐    │  │  │            │
-    │         │  │  │  │  MQTT    │    │  │  │            │
-    │         │  │  │  │  Client  │    │  │  │            │
-    │         │  │  │  │ (QoS 1)  │    │  │  │            │
-    │         │  │  │  └─────┬────┘    │  │  │            │
-    │         │  │  └────────┼─────────┘  │  │            │
-    │         │  │           │            │  │            │
-    │         │  │  ┌────────▼─────────┐  │  │            │
-    │         │  │  │ Network Stack    │  │  │            │
-    │         │  │  │ (TCP/IP)         │  │  │            │
-    │         │  │  └──────────────────┘  │  │            │
+    │         │  │  ┌──────────────────┐    │  │            │
+    │         │  │  │ Application Layer│    │  │            │
+    │         │  │  │                  │    │  │            │
+    │         │  │  │  MqttPublisher   │    │  │            │
+    │         │  │  │  (C++ Class)     │    │  │            │
+    │         │  │  │                  │    │  │            │
+    │         │  │  │  ┌──────────┐    │    │  │            │
+    │         │  │  │  │  Sensor  │    │    │  │            │
+    │         │  │  │  │ Simulator│    │    │  │            │
+    │         │  │  │  └─────┬────┘    │    │  │            │
+    │         │  │  │        │         │    │  │            │
+    │         │  │  │        ▼         │    │  │            │
+    │         │  │  │  ┌──────────┐    │    │  │            │
+    │         │  │  │  │  MQTT    │    │    │  │            │
+    │         │  │  │  │  Client  │    │    │  │            │
+    │         │  │  │  │ (QoS 1)  │    │    │  │            │
+    │         │  │  │  └─────┬────┘    │    │  │            │
+    │         │  │  └────────┼─────────┘    │  │            │
+    │         │  │           │              │  │            │
+    │         │  │  ┌────────▼─────────┐    │  │            │
+    │         │  │  │ Network Stack    │    │  │            │
+    │         │  │  │ (TCP/IP)         │    │  │            │
+    │         │  │  └──────────────────┘    │  │            │
     │         │  └──────────────────────────┘  │            │
-    │         └─────────────────────────────────┘            │
-    │                                                         │
+    │         └────────────────────────────────┘            │
+    │                                                       │
     └───────────────────────────────────────────────────────┘
 ```
 
@@ -627,59 +627,6 @@ pkill qemu-system-x86
 
 ---
 
-## Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Contribution Ideas
-- Add unit tests with Zephyr's ztest framework
-- Implement TLS/SSL support with example certificates
-- Create Docker container for easy setup
-- Add support for more boards (ESP32, nRF52, STM32)
-- Implement OTA (Over-The-Air) updates
-- Add CI/CD with GitHub Actions
-- Create real sensor drivers (DHT22, BME280, etc.)
-- Add multiple MQTT topics support
-- Implement MQTT subscription functionality
-
----
-
-## License
-
-This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 [Your Name]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
----
-
 ## Resources
 
 ### Official Documentation
@@ -705,42 +652,12 @@ SOFTWARE.
 
 ---
 
-## Learning Path
-
-**Beginner:**
-1. Run this project in QEMU
-2. Modify sensor data format (add humidity field)
-3. Change publishing interval to 10 seconds
-4. Subscribe with different MQTT clients
-
-**Intermediate:**
-5. Port to real hardware (ESP32/nRF52)
-6. Add real sensor driver (I2C/SPI)
-7. Implement TLS encryption
-8. Add multiple MQTT topics
-
-**Advanced:**
-9. Implement OTA firmware updates
-10. Add low-power modes for battery operation
-11. Create mesh networking with multiple nodes
-12. Build production IoT gateway with persistence
-
----
-
 ## Acknowledgments
 
 - **Zephyr Project** for the excellent RTOS and documentation
 - **Eclipse Mosquitto** for the reliable and lightweight broker
 - **QEMU** for making hardware-free development possible
 - **Community contributors** for feedback and improvements
-
----
-
-## Contact & Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/zephyr-mqtt-cpp-publisher/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/zephyr-mqtt-cpp-publisher/discussions)
-- **Email**: your.email@example.com
 
 ---
 
