@@ -7,37 +7,6 @@
 
 > A modern C++ MQTT publisher application built on Zephyr RTOS, demonstrating IoT sensor telemetry in an emulated environment using QEMU.
 
-## Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/PatrickAtef8/zephyrproject.git
-cd zephyrproject/zephyr-mqtt-cpp-publisher
-
-# Setup Zephyr workspace (first time only)
-./scripts/1-setup-workspace.sh
-
-# Copy project to Zephyr workspace
-cp -r . ~/zephyrproject/zephyr-mqtt-cpp-publisher
-cd ~/zephyrproject/zephyr-mqtt-cpp-publisher
-
-# Terminal 1: Start networking
-./scripts/2-start-networking.sh
-
-# Terminal 2: Start SLIP bridge (needs sudo)
-sudo ~/zephyrproject/net-tools/loop-slip-tap.sh
-
-# Terminal 3: Start MQTT broker
-./scripts/3-start-broker.sh
-
-# Terminal 4: Build and run
-./scripts/4-build-and-run.sh
-```
-
-**Within 5 minutes**, you'll have a simulated IoT device publishing temperature data to an MQTT broker!
-
----
-
 ## Table of Contents
 
 - [Overview](#overview)
